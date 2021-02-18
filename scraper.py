@@ -5,7 +5,7 @@ import time
 
 URL='https://www.amazon.in/-/hi/MYD82HN-A-New-Apple-MacBook/dp/B08N5WRWNW?ref_=ast_sto_dp&th=1'
 
-headers={"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
+headers={"User-Agent": 'GET-YOUR-DEVICE-USER-AGENT'}
 
 def check_price():
     page=requests.get(URL,headers=headers)
@@ -30,7 +30,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('parthgarg2013@gmail.com','foeelcgbtkishcya')
+    server.login('parthgarg2013@gmail.com','GENERATE-YOUR-GMAIL-ACCOUNT-KEY')
 
     subject='Price fell down'
     body='Check the amazon link https://www.amazon.in/-/hi/MYD82HN-A-New-Apple-MacBook/dp/B08N5WRWNW?ref_=ast_sto_dp&th=1'
