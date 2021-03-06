@@ -29,7 +29,6 @@ def send_mail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-
     server.login('parthgarg2013@gmail.com','GENERATE-YOUR-GMAIL-ACCOUNT-KEY')
 
     subject='Price fell down'
